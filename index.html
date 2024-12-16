@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Hunter Bear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="background-title">STEADY TEDDYS GAMING</div>
+        <div class="game-container">
+            <div id="menu" class="menu">
+                <h1>STEADY TEDDYS GAMING</h1>
+                <h2>Honey Hunter Bear</h2>
+                <button id="startButton">START GAME</button>
+                <div class="level-select">
+                    <h2>Select Level</h2>
+                    <div class="level-buttons">
+                        <!-- Level buttons will be added by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            <canvas id="gameCanvas"></canvas>
+            <div class="score-display">
+                Score: <span id="score">0</span>
+                Level: <span id="level">1</span>
+            </div>
+            <div class="pause-screen" id="pauseScreen" style="display: none;">
+                <h2>PAUSED</h2>
+                <div class="brand">STEADY TEDDYS GAMING</div>
+                <button id="resumeButton">RESUME</button>
+            </div>
+        </div>
+        <div class="game-over-screen" id="gameOverScreen" style="display: none;">
+            <h2>GAME OVER!</h2>
+            <div class="final-score">Final Score: <span id="finalScore">0</span></div>
+            <button id="restartButton" class="restart-button">PLAY AGAIN</button>
+            <div class="brand">STEADY TEDDYS GAMING</div>
+        </div>
+    </div>
+    <div class="brand-corner">STEADY TEDDYS GAMING</div>
+    <div class="mobile-controls">
+        <button id="leftBtn">←</button>
+        <button id="rightBtn">→</button>
+        <button id="upBtn">↑</button>
+        <button id="downBtn">↓</button>
+    </div>
+    <button class="pause-btn" id="pauseBtn">⏸</button>
+    <script src="game.js"></script>
+</body>
+</html>
